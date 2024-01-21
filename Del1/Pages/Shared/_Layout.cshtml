@@ -1,0 +1,54 @@
+﻿    
+    @{
+        // Beräknar dagens datum
+        string todaysDate = DateTime.Now.ToString("yyyy-MM-dd");
+        
+       }
+    
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Test-webbplats</title>'
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />'
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Del1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+       <a asp-area="" asp-page="/Index"><img src="./images/pic.png" alt="" /></a>
+       <div id="date" class="date">
+           <p>Datum: <br><strong>@todaysDate</strong></p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a class="nav-link text-black" asp-area="" asp-page="/Index">Start</a>
+                </li>
+                <li>
+                    <a class="nav-link text-black"  asp-area="" asp-page="/Razor">Razor</a>
+                </li>
+                <li>
+                    <a class="nav-link text-black"  asp-area="" asp-page="/About">Om sidan</a>
+                </li>
+            </ul>
+        </div>
+        <main class="content">
+        @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <p>Webbplats skapad av Cecilia Edvardsson. Kontakta mig via e-post <a href="mailto:ceed2200@student.miun.se">här</a>.
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

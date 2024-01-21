@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Del1.props" />
+</Project>

@@ -1,0 +1,165 @@
+/* Header */
+
+header[b-m9b58d8hci] {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  box-shadow: 2px 2px 1px rgb(184, 181, 181);
+}
+
+img[b-m9b58d8hci] {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.date[b-m9b58d8hci] {
+  margin-right: 20px;
+  padding: 15px 20px 0;
+  background-color: rgb(222, 235, 249);
+  box-shadow: 2px 2px 1px rgb(202, 201, 201);
+  color: darkblue;
+}
+
+/* Menyn */
+
+.sidebar[b-m9b58d8hci] {
+  width: 25%;
+  margin: 40px auto 0;
+}
+
+.sidebar ul[b-m9b58d8hci] {
+  width: 80%;
+  margin: 40px auto 0;
+  padding: 0;
+}
+
+.sidebar ul li[b-m9b58d8hci] {
+  list-style-type: none;
+  background-color: rgb(254, 240, 186);
+  box-shadow: 2px 2px 1px rgb(202, 201, 201);
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sidebar ul li:hover[b-m9b58d8hci] {
+  text-decoration: underline;
+}
+
+/* Huvudinnehåll */
+
+.wrapper[b-m9b58d8hci] {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.content[b-m9b58d8hci] {
+  width: 75%;
+  max-width: 1000px;
+  margin: 40px 30px 0;
+  padding: 30px 0 200px 60px;
+}
+
+footer[b-m9b58d8hci] {
+  text-align: center;
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* Mellanstor skärmupplösning */
+
+@media screen and (max-width: 1000px) {
+  .wrapper[b-m9b58d8hci] {
+    display: block;
+  }
+
+  .sidebar[b-m9b58d8hci] {
+    width: 100%;
+  }
+
+  .sidebar ul[b-m9b58d8hci] {
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .sidebar ul li[b-m9b58d8hci] {
+    background-color: rgb(254, 240, 186);
+    box-shadow: 2px 2px 1px rgb(202, 201, 201);
+    margin: 20px auto;
+    padding: 5px 10px;
+    width: 60%;
+    max-width: 150px;
+  }
+
+  .content[b-m9b58d8hci] {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 70px;
+  }
+}
+
+/* Mini skärmupplösning */
+
+@media screen and (max-width: 376px) {
+  .date[b-m9b58d8hci] {
+    margin: 0 0 10px 15px;
+    padding: 5px 2px 50px;
+    font-size: 10px;
+    width: 60%;
+    max-width: 110px;
+  }
+}
+
+/* Stor skärmupplösning */
+
+@media screen and (min-width: 1500px) {
+  .sidebar[b-m9b58d8hci] {
+    width: 10%;
+    margin: 0;
+  }
+
+  .wrapper[b-m9b58d8hci] {
+    width: 100%;
+  }
+
+  .content[b-m9b58d8hci] {
+    width: 90%;
+    margin-left: 50px;
+  }
+}
+
+/* Liten skärmupplösning */
+
+@media screen and (max-width: 650px) {
+  .date[b-m9b58d8hci] {
+    margin: 0 20px 20px 20px;
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+
+  .sidebar ul[b-m9b58d8hci] {
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 0;
+    display: block;
+  }
+
+  .sidebar ul li[b-m9b58d8hci] {
+    background-color: rgb(254, 240, 186);
+    box-shadow: 2px 2px 1px rgb(202, 201, 201);
+    margin: 20px auto;
+    padding: 5px 10px;
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .content[b-m9b58d8hci] {
+    margin: auto;
+    padding: 0;
+  }
+}
